@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.android.uqparkingapp.ParkingDisplay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/blankText"
+                    android:layout_width="110sp"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp" />
+
+                <TextView
+                    android:id="@+id/permitHeader"
+                    android:background="@color/Permit"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="Permit"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/casualHeader"
+                    android:background="@color/Casual"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="Casual"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+            <!-- display this button in 3rd column via layout_column(zero based) -->
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P1CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P1"
+                    android:textAlignment="center"
+                    android:onClick="onClickP1"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/P1PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P1CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P2CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5sp"
+                    android:paddingTop="10sp"
+                    android:text="P2"
+                    android:textAlignment="center"
+                    android:onClick="onClickP2"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P2PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P2CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P3CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P3"
+                    android:textAlignment="center"
+                    android:onClick="onClickP3"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P3PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P3CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P4CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P4"
+                    android:textAlignment="center"
+                    android:onClick="onClickP4"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P4PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P4CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P6CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P6"
+                    android:textAlignment="center"
+                    android:onClick="onClickP6"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P6PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P6CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P7CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P7"
+                    android:textAlignment="center"
+                    android:onClick="onClickP7"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P7PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P7CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P8L1CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P8 L1"
+                    android:textAlignment="center"
+                    android:onClick="onClickP8L1"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P8L1PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P8L1CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P8L2CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P8 L2"
+                    android:textAlignment="center"
+                    android:onClick="onClickP8L2"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P8L2PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P8L2CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P9CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P9"
+                    android:textAlignment="center"
+                    android:onClick="onClickP9"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P9PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P9CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P10CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P10"
+                    android:textAlignment="center"
+                    android:onClick="onClickP10"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P10PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P10CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P11L1CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P11 L1"
+                    android:textAlignment="center"
+                    android:onClick="onClickP11L1"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P11L1PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P11L1CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P11L2CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P11L2"
+                    android:textAlignment="center"
+                    android:onClick="onClickP11L2"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P11L2PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P11L2CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow15"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/P11L3CarparkText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text="P11L3"
+                    android:textAlignment="center"
+                    android:onClick="onClickP11L3"
+                    android:clickable="true"/>/>
+
+                <TextView
+                    android:id="@+id/P11L3PermitText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/P11L3CasualText"
+                    android:background="@color/white"
+                    android:paddingBottom="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10sp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

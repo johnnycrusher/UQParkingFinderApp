@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.uqparkingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="UQ Parking Information"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ParkingDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".P1Information"
+            android:label="P1 Carpark Information" />
+        <activity
+            android:name=".P2Information"
+            android:label="P2 Carpark Information"/>
+        <activity
+            android:name=".P3Information"
+            android:label="P3 Carpark Information"/>
+        <activity
+            android:name=".P4Information"
+            android:label="P4 Carpark Information"/>
+        <activity
+            android:name=".P6Information"
+            android:label="P6 Carpark Information"/>
+        <activity
+            android:name=".P7Information"
+            android:label="P7 Carpark Information"/>
+        <activity
+            android:name=".P8L1Information"
+            android:label="P8L1 Carpark Information"/>
+        <activity
+            android:name=".P8L2Information"
+            android:label="P8L2 Carpark Information"/>
+        <activity
+            android:name=".P9Information"
+            android:label="P9 Carpark Information"/>
+        <activity
+            android:name=".P10Information"
+            android:label="P10 Carpark Information"/>
+        <activity
+            android:name=".P11L1Information"
+            android:label="P11L1 Carpark Information"/>
+        <activity
+            android:name=".P11L2Information"
+            android:label="P11L2 Carpark Information"/>
+        <activity
+            android:name=".P11L3Information"
+            android:label="P11L3 Carpark Information"></activity>
+    </application>
+
+</manifest>

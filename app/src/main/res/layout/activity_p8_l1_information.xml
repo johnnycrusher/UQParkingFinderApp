@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.uqparkingapp.P8L1Information">
+
+    <ImageView
+        android:id="@+id/p8L1Image"
+        android:layout_width="wrap_content"
+        android:layout_height="295dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/p8_parking_image"
+        android:clickable="true"
+        android:onClick="imageOnClickP8L1"/>
+
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/parkingP8L1SpaceText"
+                android:layout_width="5dp"
+                android:background="@color/white"
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:text="Parking Spaces:" />
+
+            <TextView
+                android:id="@+id/parkingP8L1Space"
+                android:background="@color/white"
+                android:paddingBottom="10sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/parkingP8L1TypeText"
+                android:layout_width="5dp"
+                android:background="@color/white"
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:text="Parking Type:" />
+
+            <TextView
+                android:id="@+id/parkingP8L1Type"
+                android:background="@color/white"
+                android:paddingBottom="10sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10sp"
+                android:text="Casual"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/parkingP8L1PriceText"
+                android:layout_width="5dp"
+                android:background="@color/white"
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:text="Parking Price:" />
+
+            <TextView
+                android:id="@+id/parkingP8L1Price"
+                android:background="@color/white"
+                android:paddingBottom="10sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10sp"
+                android:text="$5 All Day"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
